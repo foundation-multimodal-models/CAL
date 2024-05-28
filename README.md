@@ -79,7 +79,7 @@ bash run_scripts/llava16_7b.sh
 
 Note: The code will dynamically calculate the batch size for each GPU according to the total_batchsize, grad_acumsteps and the number of GPUs. When your resourses are limited, you can reduce total_batchsize or set a larger grad_acumsteps in the settings.
 
-$batchsize\_perGPU = total\_batchsize/(grad\_acumsteps*GPU\_num)$
+$batchsize_{singleGPU} = batchsize_{total}/(grad\_{acumsteps}*GPU\_{num})$
 
 For multinode training, you need to prepare a hostfile. We provide an [example](./hostfile.txt) here. Customize it based on your environment.
 
