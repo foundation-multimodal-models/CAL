@@ -1,6 +1,4 @@
-<!-- # 👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment -->
-<h1 align="center">👁️ Seeing the Image: Prioritizing Visual Correlation by</h1>
-<h1 align="center">Contrastive Alignment</p>
+# 👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment
 
 ## All codes will be released after approval.
 
