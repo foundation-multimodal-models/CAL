@@ -1,6 +1,6 @@
 # 👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment
 
-## All codes will be released after approval.
+## All codes will be released soon.
 
 This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment**]()
 
