@@ -1,10 +1,12 @@
-# 👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment
+<!-- # 👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment -->
+<h1 align="center">👁️ Seeing the Image: Prioritizing Visual Correlation by</h1>
+<h1 align="center">Contrastive Alignment</p>
 
 ## All codes will be released after approval.
 
 This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment**]()
 
-[Xin Xiao*](https://scholar.google.com/citations?user=CL-ZEdwAAAAJ&hl=zh-CN), [Bohong Wu*](), [Jiacong Wang](), [Chunyuan Li](https://chunyuan.li/), [Xun Zhou](), [Haoyuan Guo]() (*Equal Contribution)
+[Xin Xiao*](https://scholar.google.com/citations?user=CL-ZEdwAAAAJ&hl=zh-CN), [Bohong Wu*](https://scholar.google.com/citations?user=N6vypvkAAAAJ&hl=en), [Jiacong Wang](), [Chunyuan Li](https://chunyuan.li/), [Xun Zhou](), [Haoyuan Guo](https://scholar.google.com/citations?hl=en&user=hql67boAAAAJ&view_op=list_works&sortby=pubdate) (*Equal Contribution)
 
 >**abstract:**
 >Existing image-text modality alignment in Vision Language Models (VLMs) treats each text token equally in an autoregressive manner. Despite being simple and effective, this method results in sub-optimal cross-modal alignment by over-emphasizing the text tokens that are less correlated with or even contradictory with the input images. In this paper, we advocate for assigning distinct contributions for each text token based on its visual correlation. Specifically, we present by contrasting image inputs, the difference in prediction logits on each text token provides strong guidance of visual correlation. We therefore introduce **C**ontrastive **AL**ignment (CAL), a simple yet effective re-weighting strategy that prioritizes training visually correlated tokens. Our experimental results demonstrate that CAL consistently improves different types of VLMs across different resolutions and model sizes on various benchmark datasets. Importantly, our method incurs minimal additional computational overhead, rendering it highly efficient compared to alternative data scaling strategies.
