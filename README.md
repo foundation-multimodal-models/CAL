@@ -2,7 +2,7 @@
 
 ## All codes will be released soon.
 
-This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment**]()
+This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment**](https://arxiv.org/pdf/2405.17871)
 
 [Xin Xiao*](https://scholar.google.com/citations?user=CL-ZEdwAAAAJ&hl=zh-CN), [Bohong Wu*](https://scholar.google.com/citations?user=N6vypvkAAAAJ&hl=en), Jiacong Wang, [Chunyuan Li](https://chunyuan.li/), Xun Zhou, [Haoyuan Guo](https://scholar.google.com/citations?hl=en&user=hql67boAAAAJ&view_op=list_works&sortby=pubdate) (*Equal Contribution)
 
