@@ -107,7 +107,12 @@ Thanks a lot for their great works.
 
 ## Citation
 ```bibtex
-@inproceedings{}
+@misc{xiao2024seeing,
+      title={Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment}, 
+      author={Xin Xiao and Bohong Wu and Jiacong Wang and Chunyuan Li and Xun Zhou and Haoyuan Guo},
+      year={2024},
+      eprint={2405.17871},
+}
 ```
 
 
