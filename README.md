@@ -1,5 +1,6 @@
 # 👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+<a href='https://arxiv.org/pdf/2405.17871'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
 ## All codes will be released soon.
 
