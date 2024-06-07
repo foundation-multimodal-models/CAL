@@ -2,7 +2,6 @@
 [![License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
 <a href='https://arxiv.org/pdf/2405.17871'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
-## All codes will be released soon.
 
 This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment**](https://arxiv.org/pdf/2405.17871)
 
@@ -16,8 +15,8 @@ This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing 
 
 
 
-<!-- ## News and Updates
-* ```2024.05``` 🔥🔥🔥 Code released. -->
+## News and Updates
+* ```2024.06``` 🔥🔥🔥 Code released.
 
 ## Selected Examples
 <p align="center"><img width="100%" src="./images/cases.jpg"></p>

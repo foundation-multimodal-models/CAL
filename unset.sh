@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Unset all variables
+unset base_dir
+unset exp_name
+unset expdetail
+unset mm_projector_type
+unset vision_tower
+unset model_max_length
+
+unset pretrain_llm
+unset pretrain_openvit
+unset finetune_image_aspect_ratio
+unset finetune_mm_patch_merge_type
+unset pretrain_save_dir
+unset pretrain_conv_version
+unset pretrain_json
+unset pretrain_imagedir
+unset pretrain_deepspeed
+unset pretrain_wandb_project
+unset pretrain_wandb_process
+unset pretrain_total_batchsize
+unset pretrain_grad_acumsteps
+unset pretrain_num_epoch
+unset pretrain_lr
+
+unset finetune_llm
+unset finetune_openvit
+unset finetune_image_aspect_ratio
+unset finetune_mm_patch_merge_type
+unset finetune_save_dir
+unset fintune_conv_version
+unset finetune_json
+unset finetune_imagedir
+unset finetune_deepspeed
+unset finetune_wandb_project
+unset finetune_wandb_process
+unset finetune_total_batchsize
+unset finetune_grad_acumsteps
+unset finetune_num_epoch
+unset finetune_lr
+
+unset skip_finetune
+unset skip_pretrain

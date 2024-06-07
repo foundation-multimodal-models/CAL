@@ -1,0 +1,45 @@
+#!/bin/bash
+torchrun --nnodes=$ARNOLD_WORKER_NUM \
+         --node_rank=$ARNOLD_ID \
+         --nproc_per_node=$ARNOLD_WORKER_GPU \
+         --master_addr=$ARNOLD_WORKER_0_HOST \
+         --master_port=$port \
+    llava/train/train_mem.py \
+    --deepspeed "$finetune_deepspeed" \
+    --model_name_or_path "$finetune_llm" \
+    --version "$fintune_conv_version" \
+    --data_path "$finetune_json" \
+    --image_folder "$finetune_imagedir" \
+    --vision_tower "$vision_tower" \
+    --open_vit "$finetune_openvit" \
+    --mm_projector_type "$mm_projector_type" \
+    --mm_vision_select_layer -2 \
+    --mm_use_im_start_end False \
+    --mm_use_im_patch_token False \
+    --image_aspect_ratio $finetune_image_aspect_ratio \
+    --mm_patch_merge_type $finetune_mm_patch_merge_type \
+    --group_by_modality_length True \
+    --bf16 True \
+    --output_dir "$finetune_save_dir" \
+    --num_train_epochs "$finetune_num_epoch" \
+    --per_device_train_batch_size $[$finetune_total_batchsize/$ARNOLD_WORKER_NUM/$ARNOLD_WORKER_GPU/$finetune_grad_acumsteps] \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps $finetune_grad_acumsteps \
+    --evaluation_strategy "no" \
+    --save_strategy "steps" \
+    --save_steps 20000 \
+    --save_total_limit 1 \
+    --lr_multi "model.vision_tower:0.1" \
+    --learning_rate "$finetune_lr" \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 1 \
+    --tf32 True \
+    --model_max_length $model_max_length \
+    --gradient_checkpointing True \
+    --dataloader_num_workers 8 \
+    --lazy_preprocess True \
+    --report_to wandb \
+    --wandb_project "$finetune_wandb_project" \
+    --wandb_process "$finetune_wandb_process"
