@@ -1,14 +1,24 @@
-# 👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment
-[![License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+<div align="center">
+<h1>👁️ Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment</h1>
+<a href='https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE'><img src='https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg'></a>
 <a href='https://arxiv.org/pdf/2405.17871'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
+[Xin Xiao](https://scholar.google.com/citations?user=CL-ZEdwAAAAJ&hl=zh-CN)<sup>1,2*</sup>, 
+[Bohong Wu](https://scholar.google.com/citations?user=N6vypvkAAAAJ&hl=en)<sup>2*</sup>, 
+Jiacong Wang<sup>2,3</sup>, 
+[Chunyuan Li](https://chunyuan.li/)<sup>2</sup>, 
+Xun Zhou<sup>2</sup>, 
+[Haoyuan Guo](https://scholar.google.com/citations?hl=en&user=hql67boAAAAJ&view_op=list_works&sortby=pubdate) <sup>2</sup>
 
-This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment**](https://arxiv.org/pdf/2405.17871)
+<sup>1</sup>School of Computer Science, Wuhan University, <sup>2</sup>ByteDance Inc
 
-[Xin Xiao*](https://scholar.google.com/citations?user=CL-ZEdwAAAAJ&hl=zh-CN), [Bohong Wu*](https://scholar.google.com/citations?user=N6vypvkAAAAJ&hl=en), Jiacong Wang, [Chunyuan Li](https://chunyuan.li/), Xun Zhou, [Haoyuan Guo](https://scholar.google.com/citations?hl=en&user=hql67boAAAAJ&view_op=list_works&sortby=pubdate) (*Equal Contribution)
+<sup>3</sup>School of Artificial Intelligence, University of Chinese Academy of Sciences
+
 
 >**abstract:**
 >Existing image-text modality alignment in Vision Language Models (VLMs) treats each text token equally in an autoregressive manner. Despite being simple and effective, this method results in sub-optimal cross-modal alignment by over-emphasizing the text tokens that are less correlated with or even contradictory with the input images. In this paper, we advocate for assigning distinct contributions for each text token based on its visual correlation. Specifically, we present by contrasting image inputs, the difference in prediction logits on each text token provides strong guidance of visual correlation. We therefore introduce **C**ontrastive **AL**ignment (CAL), a simple yet effective re-weighting strategy that prioritizes training visually correlated tokens. Our experimental results demonstrate that CAL consistently improves different types of VLMs across different resolutions and model sizes on various benchmark datasets. Importantly, our method incurs minimal additional computational overhead, rendering it highly efficient compared to alternative data scaling strategies.
+
+</div>
 
 <p align="center"><img width="100%" src="./images/motivation.jpg"></p>
 <p align="center"><img width="100%" src="./images/method.jpg"></p>
@@ -16,10 +26,10 @@ This is an official PyTorch Implementation of [**Seeing the Image: Prioritizing 
 
 
 ## News and Updates
-* ```2024.06``` 🔥🔥🔥 Code released.
+* ```2024.06``` 🔥🔥🔥 The code is released.
 
-## Selected Examples
-<p align="center"><img width="100%" src="./images/cases.jpg"></p>
+<!-- ## Selected Examples
+<p align="center"><img width="100%" src="./images/cases.jpg"></p> -->
 
 ## Results
 We provide results comparision for LLaVA-NEXT here. 
