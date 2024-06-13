@@ -2,7 +2,7 @@
 
 export exp_name="llava16_7b_cal" 
 export model_max_length="4096"
-export base_dir="/path/llava_v15/"
+export base_dir="/path/llava_v16/"
 
 export pretrain_llm="lmsys/vicuna-13b-v1.5"
 export pretrain_json="/path/to/blip_laion_cc_sbu_558k.json"

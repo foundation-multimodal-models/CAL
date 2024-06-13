@@ -43,11 +43,6 @@ def build_vision_projector(config, delay_load=False, **kwargs):
         config.encoder_hidden_size = config.mm_hidden_size
         config.pos_emb = True
         config.prenorm = False
-        # import os
-        # if int(os.environ.get("RANK", 0)) == 0:
-        #     from IPython import embed; embed()
-        # from time import sleep
-        # sleep(1000000)
         return CAbstractor(config, 576, config.hidden_size)
 
     mlp_gelu_match = re.match(r'^mlp(\d+)x_gelu$', projector_type)

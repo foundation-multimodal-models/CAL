@@ -1,8 +1,8 @@
-export HF_HOME='/path/to/data/huggingface'
+# export HF_HOME='/path/to/data/huggingface'
 
 export exp_name="llava16_7b_cal" 
 export model_max_length="4096"
-export base_dir="/path/llava_v15/"
+export base_dir="/path/llava_v16/"
 
 export pretrain_json="/path/to/blip_laion_cc_sbu_558k.json"
 export pretrain_imagedir="/path/data/"

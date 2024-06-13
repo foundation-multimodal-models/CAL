@@ -1,4 +1,4 @@
-export HF_HOME='/path/to/data/huggingface'
+# export HF_HOME='/path/to/data/huggingface'
 
 cur_dir=$(pwd)
 

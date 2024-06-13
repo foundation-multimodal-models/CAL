@@ -1,4 +1,4 @@
-export HF_HOME='/path/to/data/huggingface'
+# export HF_HOME='/path/to/data/huggingface'
 
 export exp_name="llava15_13b_cal" 
 export base_dir="/path/llava_v15/"
