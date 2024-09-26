@@ -26,7 +26,8 @@ Xun Zhou<sup>2</sup>,
 
 
 ## News and Updates
-* ```2024.06``` 🔥🔥🔥 The code is released.
+* ```2024.09``` 🔥 CAL is accepted by _NeurIPS_ 2024.
+* ```2024.06``` The code is released.
 
 <!-- ## Selected Examples
 <p align="center"><img width="100%" src="./images/cases.jpg"></p> -->
@@ -120,8 +121,8 @@ Thanks a lot for their great works.
 @misc{xiao2024seeing,
       title={Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment}, 
       author={Xin Xiao and Bohong Wu and Jiacong Wang and Chunyuan Li and Xun Zhou and Haoyuan Guo},
+      publisher={NeurIPS},
       year={2024},
-      eprint={2405.17871},
 }
 ```
 
