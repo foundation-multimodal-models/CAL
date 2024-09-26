@@ -14,9 +14,9 @@ Xun Zhou<sup>2</sup>,
 
 <sup>3</sup>School of Artificial Intelligence, University of Chinese Academy of Sciences
 
-
 >**abstract:**
 >Existing image-text modality alignment in Vision Language Models (VLMs) treats each text token equally in an autoregressive manner. Despite being simple and effective, this method results in sub-optimal cross-modal alignment by over-emphasizing the text tokens that are less correlated with or even contradictory with the input images. In this paper, we advocate for assigning distinct contributions for each text token based on its visual correlation. Specifically, we present by contrasting image inputs, the difference in prediction logits on each text token provides strong guidance of visual correlation. We therefore introduce **C**ontrastive **AL**ignment (CAL), a simple yet effective re-weighting strategy that prioritizes training visually correlated tokens. Our experimental results demonstrate that CAL consistently improves different types of VLMs across different resolutions and model sizes on various benchmark datasets. Importantly, our method incurs minimal additional computational overhead, rendering it highly efficient compared to alternative data scaling strategies.
+
 
 </div>
 
@@ -89,7 +89,7 @@ bash run_scripts/llava16_7b.sh
 
 Note: The code will dynamically calculate the batch size for each GPU according to the total_batchsize, grad_acumsteps and the number of GPUs. When your resourses are limited, you can reduce total_batchsize or set a larger grad_acumsteps in the settings.
 
-$batchsize_{singleGPU} = batchsize_{total}/(grad\_{acumsteps}*GPU\_{num})$
+$batchsize\_{singleGPU} = batchsize\_{total}/(grad\_{acumsteps}*GPU\_{num})$
 
 For multinode training, you need to prepare a hostfile. We provide an [example](./hostfile.txt) here. Customize it based on your environment.
 
